@@ -10,7 +10,7 @@ function App() {
     // Axios GET 요청 함수
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/users");
+        const response = await axios.get("https://api.yerimkim-domain.click:8080/users");
         console.log(response)
         setData(response.data); // 응답 데이터 설정
       } catch (err) {
